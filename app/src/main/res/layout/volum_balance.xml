@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+        <ImageView
+                android:id="@+id/img_balance_bg"
+                android:layout_width="306.8px"
+                android:layout_height="355.8px"
+                android:layout_marginLeft="100px"
+                android:src="@drawable/bg_sound_balance"/>
+
+        <ImageView
+                android:id="@+id/volum_balance_point_view"
+                android:layout_width="113px"
+                android:layout_height="113px"
+                android:src="@drawable/ic_central_point"/>
+
+        <com.example.balanceview.volumebalance.VerticalSeekBar
+                android:id="@+id/vsb_balance_top"
+                android:layout_width="50px"
+                android:layout_height="380px"
+                android:layout_centerVertical="true"
+                android:visibility="visible"
+                app:dragable="true"
+                app:image_background="@drawable/ic_voice_thumb"
+                app:max_count="9"
+                app:min_count="-9"/>
+
+        <com.example.balanceview.volumebalance.HorizontalSeeker
+                android:id="@+id/hsb_balance_left"
+                android:layout_width="380px"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_balance_bg"
+                android:layout_marginTop="40px"
+                android:layout_toRightOf="@+id/vsb_balance_top"
+                android:focusable="false"
+                android:max="18"
+                android:maxHeight="4px"
+                android:minHeight="4px"
+                android:paddingLeft="18px"
+                android:paddingRight="18px"
+                android:progressDrawable="@drawable/seekbar_horizonta"
+                android:thumbOffset="0px"
+                tools:ignore="MissingConstraints"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
