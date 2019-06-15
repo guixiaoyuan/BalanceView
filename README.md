@@ -1,7 +1,7 @@
 # BalanceView
 自定义view，控制一个焦点在某个区域移动
 
-![example.png](https://github.com/guixiaoyuan/BalanceView/blob/master/example.png.png)
+![example.png](https://github.com/guixiaoyuan/BalanceView/blob/master/example.png)
 
 # 意见反馈
 如果遇到问题或者好的建议，请反馈到我的邮箱：463316523@qq.com
